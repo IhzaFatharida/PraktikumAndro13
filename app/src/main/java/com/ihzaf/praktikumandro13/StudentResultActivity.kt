@@ -17,7 +17,6 @@ class StudentResultActivity : AppCompatActivity() {
         val student = intent.getParcelableExtra<Student>("student")
 
         if(student == null) {
-
             val npm = intent.getStringExtra("npm")
             val name = intent.getStringExtra("name")
             val ipk = intent.getDoubleExtra("ipk", 0.0)
@@ -27,6 +26,11 @@ class StudentResultActivity : AppCompatActivity() {
             tvName.text = name
             tvIpk.text = ipk.toString()
             tvPhoneNumber.text = phoneNumber
+        }else{
+            tvNpm.text = student.npm
+            tvName.text = student.name
+            tvIpk.text = student.ipk.toString()
+            tvPhoneNumber.text = student.phoneNumber
 
         }
     }
