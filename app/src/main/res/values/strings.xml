@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PraktikumAndro13</string>
+    <string name="first_number">First Number</string>
+    <string name="second_number">Second Number</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="multiply">*</string>
+    <string name="division">/</string>
+    <string name="result">Result</string>
+</resources>

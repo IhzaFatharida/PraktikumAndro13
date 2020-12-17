@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvNpm" type="id">tvNpm</item>
+    <item name="tvName" type="id">tvName</item>
+    <item name="tvIpk" type="id">tvIpk</item>
+    <item name="tvPhoneNumber" type="id">tvPhoneNumber</item>
+</resources>
