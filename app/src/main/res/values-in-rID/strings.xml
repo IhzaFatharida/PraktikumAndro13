@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">PraktikumAndro13</string>
+    <string name="first_number">Angka Pertama</string>
+    <string name="second_number">Angka Kedua</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="multiply">*</string>
+    <string name="division">/</string>
+    <string name="result">Result</string>
+    <string name="logo">Logo</string>
+    <string name="npm">NPM</string>
+    <string name="name">Nama</string>
+    <string name="ipk">GPA</string>
+    <string name="phone_number">Nomor Telepon</string>
+    <string name="send_with_intent">Kirim Dengan Intent</string>
+    <string name="send_with_intent_parcelable">Kirim Dengan Intent Parcelable</string>
+    <string name="call">Lakukan Panggilan</string>
+    <string name="language_option">Pilihan Bahasa</string>
+</resources>

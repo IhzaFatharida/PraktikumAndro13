@@ -4,6 +4,10 @@ import android.content.Intent
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_student.*
@@ -25,7 +29,13 @@ class StudentActivity : AppCompatActivity() {
 
             val npm = etNpm.text.toString()
             val name = etName.text.toString()
-            val ipk = etIpk.text.toString().toDouble()
+
+            var ipk = 0.0
+            val ipkString = etIpk.text.toString()
+            if(ipkString != ""){
+                ipk = etIpk.text.toString().toDouble()
+            }
+
             val phoneNumber = etPhoneNumber.text.toString()
 
             val i = Intent(this, StudentResultActivity::class.java)
@@ -55,5 +65,20 @@ class StudentActivity : AppCompatActivity() {
             val dialIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
             startActivity(dialIntent)
         }
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.main_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        if(item.itemId == R.id.menu_language_option){
+            val i = Intent(Settings.ACTION_LOCALE_SETTINGS)
+            startActivity(i)
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 }
